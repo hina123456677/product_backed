@@ -1,0 +1,13 @@
+
+version: "3.9"
+
+services:
+  backend:
+    image: backend:latest   # replace with your built image name
+    container_name: backend-container
+    ports:
+      - "4040:4040"
+    environment:
+      - PORT=4040
+      - MONGODB_URI=mongodb+srv://hina:hina551@cluster0.75w3ojk.mongodb.net/productDB?retryWrites=true&w=majority
+    restart: always
