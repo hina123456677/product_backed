@@ -11,3 +11,4 @@ services:
       - PORT=4040
       - MONGODB_URI=mongodb+srv://hina:hina551@cluster0.75w3ojk.mongodb.net/productDB?retryWrites=true&w=majority
     restart: always
+ 
